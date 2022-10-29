@@ -1,14 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- DGL 103 CVS1 - Joshua Coppel - Assignment E -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Assessment - Nicole Cahoon</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
-</body>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Evaluation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1>
+          Website Evaluation -
+          <a href="http://nicolecahoon.com" target="_blank"
+            >Nicole Cahoon, CPA</a
+          >
+        </h1>
+        <p>
+          I've decided to analyze the website of Nicole Cahoon, a local
+          accountant. During my exploration of her website, I was able to
+          determine 4 major aspects which could use improvement.
+        </p>
+      </header>
+
+      <section>
+        <h2>HTTPS</h2>
+        <p>
+          The first issue — and arguably the most important — was one I noticed
+          before I had even started loading the page: Nicole's website is not
+          using HTTPS. This results in a warning before even accessing the page
+          in almost any modern browser, on any device. This, obviously,
+          negatively impacts one of the main purposes of having a website,
+          marketing yourself and your brand.
+        </p>
+        <p>
+          Fortunately, this issue is easily fixable. Many web hosts can issue,
+          install, and renew
+          <abbr title="Secure sockets layer/Transport layer security">
+            SSL/TLS
+          </abbr>
+          certificates for you. If your web host doesn't, there are ways to get
+          your own certificates from a
+          <abbr title="Certificate authority">CA</abbr>. One example is
+          <a href="https://letsencrypt.org" target="_blank">Let's Encrypt</a>, a
+          CA that provides certificates for free in the interest of creating a
+          safer internet.
+        </p>
+      </section>
+
+      <section>
+        <h2>Layout</h2>
+        <p>
+          There are a few layout issues with the site which make it feel
+          unprofessional. This is <small>(likely)</small> antithetical to the
+          way Nicole wants to portray her brand.
+        </p>
+
+        <h3>Headers</h3>
+        <p>
+          For every page on the website, the same header image is used. This
+          header image, while admittedly cute, does not accurately reflect the
+          content of each page its used on. Even worse, using the same image
+          over and over comes across as lazy.
+        </p>
+        <p>
+          Using the dog picture on the home page is fine, but for the other
+          pages the designer consider using more relevant pictures. When talking
+          about how you can help local businesses, why not use a picture of a
+          client's storefront, or a wide shot of downtown Courtenay?
+        </p>
+        <p>
+          Additionally, the header image used is set to display far too large.
+          On my monitor, which is a standard size of 1920x1080p, the header
+          images take up the entire viewport and the header text itself doesn't
+          show up until you scroll halfway down the page.
+        </p>
+        <figure>
+          <video width="640" height="480" autoplay muted loop>
+            <source src="videos/headersize.webm" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>
+            A user's browser — in this case, Vivaldi. The header text is not
+            visible until they scroll down the page.
+          </figcaption>
+        </figure>
+
+        <h3>Miscellaneous/Smaller Issues</h3>
+        <ul>
+          <li>
+            Awkward whitespace <em>everywhere</em>, like in the footer, or on
+            the Contact and BC Financial Resources pages.
+          </li>
+          <li>
+            The Facebook button in the nav bar feels unnecessary and out of
+            place, being an off-site link that looks exactly like and is in the
+            same place as the on-site navigation.
+          </li>
+        </ul>
+        <div class="image-row">
+            <div class="image-column">
+                <img src="images/whitespace1.png" alt="An empty paragraph on the BC Financial Resources page">
+            </div>
+            <div class="image-column">
+                <img src="images/whitespace2.png" alt="An empty paragraph in the footer section">
+            </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
