@@ -13,14 +13,14 @@ html {
 /* ----------------------------- general styling ---------------------------- */
 
 body {
-    margin: 30px auto;
-    max-width: 650rem;
-    font-size: 18rem;
-    font-family: "IBM Plex Sans", sans-serif;
-    line-height: 1.6;
-    color: #212121;
-    background-color: #f5f5f5;
-  }
+  margin: 30px auto;
+  max-width: 650rem;
+  font-size: 18rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  line-height: 1.6;
+  color: #212121;
+  background-color: #f5f5f5;
+}
 
 header {
   margin-bottom: 40px;
@@ -53,7 +53,6 @@ hr {
 figure {
   border-radius: 5px;
   background-color: #fafafa;
-  width: auto;
   margin: 25px;
   padding: 25px;
   border-left: 5px solid #80deea;
@@ -76,8 +75,8 @@ video {
 /* ----------------------------- utility classes ---------------------------- */
 
 .mouseover-text {
-    text-decoration: underline dotted;
-    text-underline-offset: 2px;
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
 }
 
 /* ----------------------- side-by-side image classes ----------------------- */
@@ -96,7 +95,7 @@ video {
 
 /* -------------------- mobile/small display alternatives ------------------- */
 
-/* if the browser is smaller than 650px, use alternative styling */
+/* if the browser is less than 650px wide, use alternative styling */
 @media (max-width: 650px) {
   main {
     width: 75%;
