@@ -1,26 +1,63 @@
+/* alternative root font size to get rid of the necessity to multiply by 10, allowing direct conversion from px to rem */
 html {
-  font-size: 62.5%;
+  font-size: 6.25%;
 }
 
 body {
-  font-size: 1.6rem;
+  margin: 0px;
+  font-size: 16rem;
   font-family: sans-serif;
   color: #212121;
   background-color: #f5f5f5;
+}
+
+header {
+  margin: 0px 0px 50px 0px;
+  padding: 10px;
+  background-color: #4dd0e1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+header h1 {
+    margin: 10px;
+}
+
+header p {
+    margin: 10px;
+}
+
+/* minimize blank space on smaller screens */
+main {
+  width: 75%;
+  margin: auto;
+}
+
+/* if the browser is larger than 640px, use an alternative, spacier width */
+@media (min-width: 640rem) {
+  main {
+    width: 50%;
+  }
 }
 
 figure {
   border-radius: 5px;
   background-color: #fafafa;
   width: auto;
-  margin: 50px;
-  padding: 30px;
+  margin: 25px;
+  padding: 25px;
   border-left: 5px solid #4dd0e1;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
+img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
 video {
-  margin: -50px auto;
+  width: 100%;
+  margin: 0px auto 25px auto;
 }
 
 .image-row {
@@ -28,7 +65,7 @@ video {
 }
 
 .image-column {
-  flex: 33.33%;
+  flex: 50%;
   padding: 5px;
 }
 

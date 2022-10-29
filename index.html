@@ -10,21 +10,19 @@
   </head>
 
   <body>
-    <main>
-      <header>
-        <h1>
-          Website Evaluation -
-          <a href="http://nicolecahoon.com" target="_blank"
-            >Nicole Cahoon, CPA</a
-          >
-        </h1>
-        <p>
-          I've decided to analyze the website of Nicole Cahoon, a local
-          accountant. During my exploration of her website, I was able to
-          determine 3 major aspects which could use improvement.
-        </p>
-      </header>
+    <header>
+      <h1>
+        Website Evaluation -
+        <a href="http://nicolecahoon.com" target="_blank">Nicole Cahoon, CPA</a>
+      </h1>
+      <p>
+        I've decided to analyze the website of Nicole Cahoon, a local
+        accountant. During my exploration of her website, I was able to
+        determine 3 major aspects which could use improvement.
+      </p>
+    </header>
 
+    <main>
       <!--
       A NOTE:
       I originally had written this section on how the website was lacking HTTPS.
@@ -87,7 +85,7 @@
           was designed with a mobile-first ideology.
         </p>
         <figure>
-          <video width="640" height="480" autoplay muted loop>
+          <video autoplay muted loop>
             <source src="videos/headersize.webm" type="video/webm" />
             Your browser does not support the video tag.
           </video>
@@ -101,7 +99,17 @@
         <ul>
           <li>
             Awkward whitespace <em>everywhere</em>, like in the footer, or on
-            the Contact and BC Financial Resources pages.
+            the
+            <a href="http://nicolecahoon.com/contact/" target="_blank"
+              >Contact</a
+            >
+            and
+            <a
+              href="http://nicolecahoon.com/bc-financial-resources/"
+              target="_blank"
+              >BC Financial Resources</a
+            >
+            pages.
           </li>
           <li>
             The Facebook button in the nav bar feels unnecessary and out of
@@ -114,12 +122,14 @@
             <div class="image-column">
               <img
                 src="images/whitespace1.png"
-                alt="An empty paragraph on the BC Financial Resources page" />
+                alt="An empty paragraph on the BC Financial Resources page"
+              />
             </div>
             <div class="image-column">
               <img
                 src="images/whitespace2.png"
-                alt="An empty paragraph in the footer section" />
+                alt="An empty paragraph in the footer section"
+              />
             </div>
           </div>
           <figcaption>
@@ -127,6 +137,8 @@
           </figcaption>
         </figure>
       </section>
+
+      <hr />
 
       <section>
         <h2>Colour</h2>
@@ -145,13 +157,90 @@
         <figure>
           <img
             src="images/palette.png"
-            alt="A palette of off-white, off-black, and gold" />
+            alt="A palette of off-white, off-black, and gold"
+          />
           <figcaption>
-            An example of a palette I might use. Colours picked from Google's
-            Material Design libary. It is, incidentally, also similar to the
-            palette I'm using on this website. I am a creature of habit.
+            An example of a palette I might use. The colours have been picked
+            from Google's
+            <a
+              href="https://m2.material.io/design/color/the-color-system.html"
+              target="_blank"
+              >Material Design</a
+            >
+            colour system.
           </figcaption>
         </figure>
+      </section>
+
+      <hr />
+
+      <section>
+        <h2>Text/Formatting</h2>
+
+        <!-- TODO: put text here later -->
+
+        <h3>Special Characters</h3>
+        <p>
+          The most egregious issue when it comes to the website's text
+          formatting is the rendering of special HTML characters on the
+          <a
+            href="http://nicolecahoon.com/bc-financial-resources/"
+            target="_blank"
+            >BC Financial Resources</a
+          >
+          page. These symbols were visible on both desktop browsers and on
+          mobile.
+        </p>
+        <figure>
+          <img
+            src="images/specialcharacters.png"
+            alt="A list of links with special HTML characters unintentionally visible"
+          />
+          <figcaption>
+            A screenshot of the special HTML characters in question. These are
+            line separators, and should not be visible to the client. This issue
+            can be caused by lazily pasting text from another program without
+            checking it first.
+          </figcaption>
+        </figure>
+
+        <h3>Links</h3>
+        <p>
+          Links are used throughout the site, but it's hardly obvious. This is
+          because they all lack underlines, which has come to be an accepted,
+          universal indicator that a piece of text is a clickable link.
+        </p>
+        <figure>
+          <img
+            src="images/links.png"
+            alt="Headers on the home page, which include anchor elements rendered without underlines"
+          />
+          <figcaption>
+            These are headers from the home page. They're actually links to
+            their respective pages, but how is someone supposed to be able to
+            tell without hovering their mouse over one? What about mobile users,
+            who can't hover at all?
+          </figcaption>
+        </figure>
+
+        <h3>Miscellaneous/Smaller Issues</h3>
+        <ul>
+          <li>
+            Email and phone number links in the footer and on the
+            <a href="http://nicolecahoon.com/contact/" target="_blank"
+              >Contact Us</a
+            >
+            page could be made clickable.
+          </li>
+          <li>
+            On the
+            <a href="http://nicolecahoon.com/our-team/" target="_blank"
+              >Our Team</a
+            >
+            page, Conlan White is listed and has a photograph but nothing
+            written about him. It makes his inclusion seem like an afterthought.
+          </li>
+        </ul>
       </section>
     </main>
   </body>
