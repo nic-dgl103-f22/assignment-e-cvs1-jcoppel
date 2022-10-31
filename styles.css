@@ -79,9 +79,9 @@ video {
   text-underline-offset: 2px;
 }
 
-/* ----------------------- side-by-side image classes ----------------------- */
+/* removed, these are unnecessary */
 
-.image-column {
+/* .image-column {
   float: left;
   width: 50%;
   padding: 5px;
@@ -91,7 +91,7 @@ video {
   content: "";
   clear: both;
   display: table;
-}
+} */
 
 /* -------------------- mobile/small display alternatives ------------------- */
 
@@ -119,7 +119,9 @@ video {
     margin: 0px;
   }
 
+  /*
   .image-column {
     width: 100%;
   }
+  */
 }
